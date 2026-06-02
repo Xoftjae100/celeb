@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — LK Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --gold: #c9a84c; --gold-light: #e0c875; --dark: #0a0a0a;
+            --darker: #050505; --card: #111111; --text: #f0f0f0;
+            --text-muted: #888; --border: #222;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--text); line-height: 1.7; }
+        nav {
+            position: fixed; top: 0; width: 100%; padding: 1.2rem 4rem;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; background: rgba(5,5,5,0.95); backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(201,168,76,0.1);
+        }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; }
+        .logo span { display: block; font-size: 0.6rem; letter-spacing: 0.4em; color: var(--text-muted); font-family: 'Inter', sans-serif; margin-top: 2px; }
+        .nav-links { display: flex; gap: 3rem; }
+        .nav-links a { color: var(--text); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-cta { padding: 0.6rem 1.5rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; transition: all 0.3s; }
+        .nav-cta:hover { background: var(--gold); color: var(--dark); }
+
+        .page-header {
+            padding: 10rem 10% 4rem; text-align: center;
+            background: linear-gradient(rgba(5,5,5,0.9), rgba(5,5,5,0.95)), var(--dark);
+            border-bottom: 1px solid var(--border);
+        }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 300; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; }
+        .page-header p { color: var(--text-muted); font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+        .content { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+        .faq-item { margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border); }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--gold-light); margin-bottom: 1rem; font-weight: 400; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+        .faq-item ul { color: var(--text-muted); font-size: 0.95rem; margin-left: 1.5rem; margin-top: 0.5rem; }
+        .faq-item li { margin-bottom: 0.5rem; }
+
+        .back-link { display: inline-block; margin-top: 3rem; color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; border-bottom: 1px solid var(--gold); padding-bottom: 0.3rem; transition: all 0.3s; }
+        .back-link:hover { color: var(--text); border-color: var(--text); }
+
+        footer { background: var(--darker); padding: 3rem 10%; border-top: 1px solid var(--border); text-align: center; }
+        footer p { color: #444; font-size: 0.75rem; letter-spacing: 0.1em; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2rem; }
+            nav { padding: 1rem 1.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">LK<span>Management Division</span></a>
+        <div class="nav-links">
+            <a href="index.html#events">Experiences</a>
+            <a href="index.html#packages">Packages</a>
+            <a href="index.html#contact">Inquiries</a>
+        </div>
+        <a href="index.html#contact" class="nav-cta">Request Access</a>
+    </nav>
+
+    <div class="page-header">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about the official meet & greet experience.</p>
+    </div>
+
+    <div class="content">
+        <div class="faq-item">
+            <h3>How do I book a meet & greet experience?</h3>
+            <p>Complete the inquiry form on our homepage with your preferred event, package tier, and contact details. Our team reviews all requests and responds within 48 hours with availability and next steps. Submitting a request does not guarantee a booking — confirmation depends on availability.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What is included in each package tier?</h3>
+            <p>We offer three tiers designed for different levels of access:</p>
+            <ul>
+                <li><strong>Silver ($350)</strong> — Priority venue entry, exclusive tour merchandise, commemorative laminate, and professional photo opportunity.</li>
+                <li><strong>Gold ($750)</strong> — All Silver inclusions plus a personal meet & greet with Lenny, a professional photo together, a signed tour poster, and VIP lounge access.</li>
+                <li><strong>Platinum ($1,500)</strong> — All Gold inclusions plus pre-show soundcheck, a private Q&A session, a signed guitar (extremely limited), after-party access, and a personal concierge.</li>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h3>When and where will I receive my confirmation?</h3>
+            <p>After submitting your inquiry, you will receive an automated acknowledgment email. If your request is approved, our team will send a detailed confirmation with payment instructions, venue logistics, and a personal itinerary within 48 hours of approval.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I bring a guest?</h3>
+            <p>Yes. You can request up to 10 guest spots per inquiry. Each guest must purchase the same package tier. Guests under 16 must be accompanied by an adult ticket holder. Please include all guest names in your special requests field.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What is the refund and cancellation policy?</h3>
+            <p>All sales are final once payment is processed. In the rare event that a meet & greet is canceled by the artist or management, a full refund will be issued within 14 business days. If you cannot attend, tickets are non-transferable without prior written approval from our team.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What should I bring to the event?</h3>
+            <p>Bring a valid government-issued photo ID matching the name on your booking, your confirmation email (printed or digital), and comfortable attire. Professional cameras and recording equipment are not permitted during the meet & greet — our official photographer will capture all moments and deliver digital copies within 72 hours.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Are the experiences accessible for guests with disabilities?</h3>
+            <p>Absolutely. We are committed to making every experience inclusive. Please detail any accessibility needs, mobility requirements, or sensory considerations in the special requests field when booking. Our team coordinates directly with each venue to ensure appropriate accommodations.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I contact the management team?</h3>
+            <p>For booking inquiries, use the form on our homepage. For urgent matters, email us directly at <a href="mailto:lennykravitzmanagementteam07@gmail.com" style="color:var(--gold);">lennykravitzmanagementteam07@gmail.com</a>. We aim to respond to all emails within 48 hours during business days.</p>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Homepage</a>
+    </div>
+
+    <footer>
+        <p>© 2026 LK Management Division. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility — LK Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --gold: #c9a84c; --gold-light: #e0c875; --dark: #0a0a0a;
+            --darker: #050505; --card: #111111; --text: #f0f0f0;
+            --text-muted: #888; --border: #222;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--text); line-height: 1.7; }
+        nav {
+            position: fixed; top: 0; width: 100%; padding: 1.2rem 4rem;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; background: rgba(5,5,5,0.95); backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(201,168,76,0.1);
+        }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; }
+        .logo span { display: block; font-size: 0.6rem; letter-spacing: 0.4em; color: var(--text-muted); font-family: 'Inter', sans-serif; margin-top: 2px; }
+        .nav-links { display: flex; gap: 3rem; }
+        .nav-links a { color: var(--text); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-cta { padding: 0.6rem 1.5rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; transition: all 0.3s; }
+        .nav-cta:hover { background: var(--gold); color: var(--dark); }
+
+        .page-header {
+            padding: 10rem 10% 4rem; text-align: center;
+            background: linear-gradient(rgba(5,5,5,0.9), rgba(5,5,5,0.95)), var(--dark);
+            border-bottom: 1px solid var(--border);
+        }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 300; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; }
+        .page-header p { color: var(--text-muted); font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+        .content { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+        .section { margin-bottom: 3rem; }
+        .section h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--gold-light); margin-bottom: 1rem; font-weight: 400; }
+        .section p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .section ul { color: var(--text-muted); font-size: 0.95rem; margin-left: 1.5rem; margin-bottom: 1rem; }
+        .section li { margin-bottom: 0.5rem; }
+        .highlight-box { background: rgba(201,168,76,0.05); border-left: 2px solid var(--gold); padding: 1.5rem; margin: 1.5rem 0; }
+        .highlight-box p { color: var(--text); margin: 0; }
+
+        .back-link { display: inline-block; margin-top: 3rem; color: var(--gold); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; border-bottom: 1px solid var(--gold); padding-bottom: 0.3rem; transition: all 0.3s; }
+        .back-link:hover { color: var(--text); border-color: var(--text); }
+
+        footer { background: var(--darker); padding: 3rem 10%; border-top: 1px solid var(--border); text-align: center; }
+        footer p { color: #444; font-size: 0.75rem; letter-spacing: 0.1em; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2rem; }
+            nav { padding: 1rem 1.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">LK<span>Management Division</span></a>
+        <div class="nav-links">
+            <a href="index.html#events">Experiences</a>
+            <a href="index.html#packages">Packages</a>
+            <a href="index.html#contact">Inquiries</a>
+        </div>
+        <a href="index.html#contact" class="nav-cta">Request Access</a>
+    </nav>
+
+    <div class="page-header">
+        <h1>Accessibility</h1>
+        <p>We are committed to ensuring our experiences and digital presence are accessible to everyone.</p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h3>Our Commitment</h3>
+            <p>LK Management is dedicated to providing inclusive meet & greet experiences for all fans. We believe that everyone deserves the opportunity to create unforgettable memories, regardless of physical ability, sensory needs, or other accessibility requirements.</p>
+        </div>
+
+        <div class="section">
+            <h3>Event Accessibility</h3>
+            <p>We work closely with each venue to accommodate a wide range of needs, including but not limited to:</p>
+            <ul>
+                <li><strong>Mobility access</strong> — Wheelchair-accessible routes, reserved seating, and companion attendance where needed</li>
+                <li><strong>Sensory accommodations</strong> — Quiet spaces, advance notice of loud music or lighting effects, and flexible scheduling where possible</li>
+                <li><strong>Visual and hearing support</strong> — Assistance with orientation, clear signage, and communication support</li>
+                <li><strong>Medical needs</strong> — Access to medical equipment, service animals, and on-site first aid</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>Please detail any accessibility needs in the "Special Requests" field when submitting your booking inquiry.</strong> Our team reviews every request individually and coordinates with venue staff to ensure appropriate arrangements are in place before your arrival.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Digital Accessibility</h3>
+            <p>We strive to make this website accessible to all visitors. Our design choices include:</p>
+            <ul>
+                <li>High-contrast color schemes for readability</li>
+                <li>Keyboard-navigable forms and links</li>
+                <li>Semantic HTML structure for screen reader compatibility</li>
+                <li>Responsive design that adapts to various screen sizes and devices</li>
+                <li>Clear, legible typography with adequate spacing</li>
+            </ul>
+            <p>If you encounter any difficulty using this website or need information in an alternative format, please contact us and we will assist you promptly.</p>
+        </div>
+
+        <div class="section">
+            <h3>Companion & Caregiver Policy</h3>
+            <p>Guests who require a personal assistant, caregiver, or companion to attend the event may request a complimentary companion ticket. Please include this request in your booking form. Documentation is not required, but advance notice helps us coordinate with venue security and seating arrangements.</p>
+        </div>
+
+        <div class="section">
+            <h3>Accessible Communication</h3>
+            <p>If you prefer to communicate via phone, video call, email, or written correspondence rather than through our online form, we are happy to accommodate. Contact us at <a href="mailto:lennykravitzmanagementteam07@gmail.com" style="color:var(--gold);">lennykravitzmanagementteam07@gmail.com</a> and let us know your preferred method of contact.</p>
+        </div>
+
+        <div class="section">
+            <h3>Feedback & Improvements</h3>
+            <p>We continuously seek to improve our accessibility efforts. If you have suggestions, feedback, or concerns about accessibility at our events or on our website, please reach out. Your input helps us create better experiences for all fans.</p>
+        </div>
+
+        <div class="section">
+            <h3>Contact Our Accessibility Coordinator</h3>
+            <p>For specific accessibility questions or to discuss your needs before booking, email us at <a href="mailto:lennykravitzmanagementteam07@gmail.com" style="color:var(--gold);">lennykravitzmanagementteam07@gmail.com</a> with "Accessibility" in the subject line. We aim to respond within 24 hours.</p>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Homepage</a>
+    </div>
+
+    <footer>
+        <p>© 2026 LK Management Division. All rights reserved.</p>
+    </footer>
+</body>
+</html>
